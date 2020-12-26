@@ -3,6 +3,12 @@ import {ExcelComponent} from '@core/ExcelComponent';
 export class Header extends ExcelComponent {
   static className = 'excel__header'; // static to have access without class instance
 
+  constructor($root, options) {
+    super($root, {
+      name: 'Header',
+      ...options
+    });
+  }
 
   toHTML() {
     return `
