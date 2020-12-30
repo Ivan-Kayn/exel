@@ -29,7 +29,6 @@ function getAllKeys() { // excel:id from localstorage
 
 export function createRecordsTable() {
   const keys = getAllKeys();
-  console.log('keys', keys);
   if (!keys.length) {
     return `<p> You did not create any excel. </p>`;
   }
